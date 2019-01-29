@@ -12,7 +12,7 @@ module bitserialadd(input  clk,
    // state register
    // syn_encoding a synthesis attribute. 
    // It specifies the state encoding to be used for synthesis
-  (* syn_encoding = "gray" *) reg [1:0] state, statenext;
+  (* syn_encoding = "default" *) reg [1:0] state, statenext;
 
   // register
   always @(posedge clk)
